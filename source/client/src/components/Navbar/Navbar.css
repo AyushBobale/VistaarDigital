@@ -1,7 +1,25 @@
 nav {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   height: var(--nav-height);
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
+  width: 100%;
+  box-shadow: 0px 0px 25px -12px var(--accent-three);
+  z-index: 100;
+  background-color: var(--accent-one);
+}
+
+.left,
+.right {
+  display: flex;
+  align-self: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
 }

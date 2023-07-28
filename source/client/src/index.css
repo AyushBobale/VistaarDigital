@@ -1,20 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+
 :root {
   --nav-height: 60px;
+  --primary-bg: #f6f4eb;
+  --accent-one: #91c8e4;
+  --accent-two: #749bc2;
+  --accent-three: #1d3646;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: var(--accent-three);
+  scrollbar-width: thin;
+  transition: all 0.3s ease-out;
 }
 
 html,
-body,
-#main,
-.main {
-  min-height: 100vh;
+body {
+  background: var(--primary-bg);
 }
 
 .content {
   margin-top: var(--nav-height);
+  height: calc(100vh - var(--nav-height));
 }

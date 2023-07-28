@@ -1,0 +1,55 @@
+.active-cust-wrap {
+  width: 100%;
+  padding: 20px;
+}
+
+.active-cust h2 {
+  margin-bottom: 10px;
+}
+
+.active-cust {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.choice {
+  display: flex;
+  gap: 20px;
+  font-weight: 500;
+}
+
+.choice span {
+  cursor: pointer;
+}
+
+.underline {
+  border-bottom: 2px solid var(--accent-three);
+}
+
+.cust-table {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.cust-row-head,
+.cust-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 1px solid var(--accent-two);
+  padding: 10px;
+}
+
+.cust-row-head *,
+.cust-row * {
+  width: 100%;
+}
+
+.accounts {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
