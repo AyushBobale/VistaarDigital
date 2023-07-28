@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 
 import ActiveCustomer from "./pages/ActiveCustomer/ActiveCustomer";
+import DistinctProducts from "./pages/DistinctProducts/DistinctProducts";
 import { Home } from "./pages/Home/Home";
 import { PageNotFound } from "./pages/PageNotFound/PageNotFound";
 import { ROUTES } from "./config";
@@ -25,7 +26,10 @@ function App() {
             element={<Home />}
           />
           <Route path={ROUTES.ACCOUNT_TRANS_BELOW_5000} element={<Home />} />
-          <Route path={ROUTES.DISTINCT_PRODUCTS} element={<Home />} />
+          <Route
+            path={ROUTES.DISTINCT_PRODUCTS}
+            element={<DistinctProducts />}
+          />
           <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>

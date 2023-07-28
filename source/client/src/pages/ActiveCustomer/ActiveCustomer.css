@@ -3,10 +3,6 @@
   padding: 20px;
 }
 
-.active-cust h2 {
-  margin-bottom: 10px;
-}
-
 .active-cust {
   display: flex;
   flex-direction: column;

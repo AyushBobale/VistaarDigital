@@ -1,0 +1,10 @@
+.dist-wrap {
+  width: 100%;
+  padding: 20px;
+}
+
+.dist {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
