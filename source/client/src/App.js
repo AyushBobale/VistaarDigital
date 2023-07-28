@@ -12,6 +12,7 @@ import DistinctProducts from "./pages/DistinctProducts/DistinctProducts";
 import { Home } from "./pages/Home/Home";
 import { PageNotFound } from "./pages/PageNotFound/PageNotFound";
 import { ROUTES } from "./config";
+import Transactions from "./pages/Transactions/Transactions";
 import { UserLayout } from "./pages/Layouts/User/UserLayout";
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
           <Route path={ROUTES.ACTIVE} element={<ActiveCustomer />} />
           <Route
             path={ROUTES.ACCOUNT_TRANSACTIONS(":account_id")}
-            element={<Home />}
+            element={<Transactions />}
           />
           <Route path={ROUTES.ACCOUNT_TRANS_BELOW_5000} element={<Home />} />
           <Route
