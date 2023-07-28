@@ -44,6 +44,10 @@
   width: 100%;
 }
 
+.cust-row-head {
+  font-weight: 500;
+}
+
 .accounts {
   display: flex;
   flex-direction: column;

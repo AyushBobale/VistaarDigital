@@ -7,6 +7,7 @@ import {
   Routes,
 } from "react-router-dom";
 
+import AccountLessThanAmount from "./pages/AccLessThanAmount/AccountLessThanAmount";
 import ActiveCustomer from "./pages/ActiveCustomer/ActiveCustomer";
 import DistinctProducts from "./pages/DistinctProducts/DistinctProducts";
 import { Home } from "./pages/Home/Home";
@@ -26,7 +27,10 @@ function App() {
             path={ROUTES.ACCOUNT_TRANSACTIONS(":account_id")}
             element={<Transactions />}
           />
-          <Route path={ROUTES.ACCOUNT_TRANS_BELOW_5000} element={<Home />} />
+          <Route
+            path={ROUTES.ACCOUNT_TRANS_BELOW_5000}
+            element={<AccountLessThanAmount />}
+          />
           <Route
             path={ROUTES.DISTINCT_PRODUCTS}
             element={<DistinctProducts />}

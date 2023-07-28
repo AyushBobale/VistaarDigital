@@ -1,0 +1,10 @@
+.acc-l-wrap {
+  width: 100%;
+  padding: 20px;
+}
+
+.acc-l {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
