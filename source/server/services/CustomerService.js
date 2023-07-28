@@ -1,7 +1,8 @@
 import { CustomerModel } from "../src/models/CustomerModel.js";
 
 const getAllCustomersService = async () => {
-  return await CustomerModel.find({});
+  const customer = await CustomerModel.find({}).lean();
+  return customer;
 };
 
 export { getAllCustomersService };

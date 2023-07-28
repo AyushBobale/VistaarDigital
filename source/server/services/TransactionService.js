@@ -1,4 +1,4 @@
-import { TransactionModel } from "../src/models/TransactionModel,js";
+import { TransactionModel } from "../src/models/TransactionModel.js";
 
 const getAllTransactionsService = async () => {
   return await TransactionModel.find({});
