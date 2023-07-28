@@ -4,4 +4,8 @@ const getAllTransactionsService = async () => {
   return await TransactionModel.find({});
 };
 
-export { getAllTransactionsService };
+const getTransactionForAccountIdService = async (accountId) => {
+  return await TransactionModel.find({ account_id: accountId });
+};
+
+export { getAllTransactionsService, getTransactionForAccountIdService };

@@ -6,6 +6,7 @@ const CustomerSchema = new mongoose.Schema({
   address: { type: String },
   birthdate: { type: Date },
   email: { type: String },
+  active: { type: Boolean },
   accounts: { type: [Number] },
   tier_and_details: {
     type: {

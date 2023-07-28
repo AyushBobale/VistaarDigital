@@ -1,8 +1,16 @@
 import { CustomerModel } from "../src/models/CustomerModel.js";
 
 const getAllCustomersService = async () => {
-  const customer = await CustomerModel.find({}).lean();
-  return customer;
+  return await CustomerModel.find({}).lean();
 };
 
-export { getAllCustomersService };
+const getActiveCustomerService = async () => {
+  const activeCustomer = await CustomerModel.find(
+    { active: true },
+    { name: 1, address: 1, accounts: 1 }
+  ).lean();
+
+  return activeCustomer;
+};
+
+export { getAllCustomersService, getActiveCustomerService };

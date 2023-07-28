@@ -1,8 +1,13 @@
+import {
+  getActiveCustomerController,
+  getAllCustomerController,
+} from "../controllers/CustomerController.js";
+
 import Router from "express";
-import { getAllCustomerController } from "../controllers/CustomerController.js";
 
 const CustomerRouter = Router();
 
 CustomerRouter.get("/", getAllCustomerController);
+CustomerRouter.get("/active", getActiveCustomerController);
 
 export { CustomerRouter };

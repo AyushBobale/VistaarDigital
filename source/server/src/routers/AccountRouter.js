@@ -1,8 +1,15 @@
+import {
+  accountWithTransLessThanController,
+  getAllAccountController,
+  getAllUniqueProductsController,
+} from "../controllers/AccountController.js";
+
 import Router from "express";
-import { getAllAccountController } from "../controllers/AccountController.js";
 
 const AccountRouter = Router();
 
 AccountRouter.get("/", getAllAccountController);
+AccountRouter.get("/less_than", accountWithTransLessThanController);
+AccountRouter.get("/unique_products", getAllUniqueProductsController);
 
 export { AccountRouter };
