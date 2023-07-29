@@ -23,6 +23,9 @@ export const rootApi = createApi({
     accountTransLessThan: builder.query({
       query: () => `/account/less_than`,
     }),
+    accountTransLessThanAmount: builder.query({
+      query: (amount) => `/account/less_than/${amount}`,
+    }),
     uniqueProducts: builder.query({
       query: () => `/account/unique_products`,
     }),
@@ -36,4 +39,5 @@ export const {
   useAccountTransactionsQuery,
   useAccountTransLessThanQuery,
   useUniqueProductsQuery,
+  useAccountTransLessThanAmountQuery,
 } = rootApi;

@@ -32,6 +32,10 @@ function App() {
             element={<AccountLessThanAmount />}
           />
           <Route
+            path={ROUTES.ACCOUNT_TRANS_LESS_THAN(":amount")}
+            element={<AccountLessThanAmount />}
+          />
+          <Route
             path={ROUTES.DISTINCT_PRODUCTS}
             element={<DistinctProducts />}
           />

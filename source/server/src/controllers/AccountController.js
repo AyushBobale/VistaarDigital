@@ -27,7 +27,8 @@ const getAllAccountController = async (req, res, next) => {
 
 const accountWithTransLessThanController = async (req, res, next) => {
   try {
-    const amount = 5000; // Amount here is hardcoded as there was no mention to have dynamic query
+    let amount = 5000; // Amount here is hardcoded as there was no mention to have dynamic query
+    if (parseInt(req.params.amount)) amount = parseInt(req.params.amount);
     const accounts = await accountWithTransLessThanService(amount);
     if (accounts) {
       return res.status(200).json({
