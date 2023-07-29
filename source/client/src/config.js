@@ -1,4 +1,4 @@
-export const BASE_URL = "http://localhost:5000";
+export const BASE_URL = "https://vistaar-digital-api.onrender.com";
 export const ROUTES = {
   ROOT: "/",
   ACTIVE: "/active_cust",
